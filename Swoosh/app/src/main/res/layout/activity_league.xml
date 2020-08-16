@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".league">
+
+    <ImageView
+        android:id="@+id/leagueimg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/leageimg" />
+
+    <ToggleButton
+        android:id="@+id/coed"
+        android:layout_width="358dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="320dp"
+        android:checked="true"
+        android:text="@string/co_ed"
+        android:textOff="@string/co_ed"
+        android:textOn="@string/co_ed"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/leagueimg" />
+
+    <ToggleButton
+        android:id="@+id/women"
+        android:layout_width="358dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/women"
+        android:textOff="@string/women"
+        android:textOn="@string/women"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/coed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/leagueimg" />
+
+    <ToggleButton
+        android:id="@+id/men"
+        android:layout_width="358dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginBottom="8dp"
+        android:button="@android:drawable/dark_header"
+        android:text="@string/men"
+        android:textOff="@string/men"
+        android:textOn="@string/men"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/women"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/leagueimg" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="362dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="240dp"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

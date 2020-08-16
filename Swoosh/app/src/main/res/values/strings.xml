@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Swoosh</string>
+    <string name="women">WOMEN</string>
+
+    <string name="co_ed">CO-ED</string>
+
+    <string name="men">MEN</string>
+
+    <string name="todo">TODO</string>
+    <string name="next">NEXT</string>
+</resources>
