@@ -20,4 +20,14 @@ object Dataservices {
         Product("TSHIRT3","Rs1400","tshirt3"),
         Product("TSHIRT4","Rs1500","tshirt4")
     )
+    val digitalGood =listOf<Product>()
+    fun getProducts(category:String) :List<Product>{
+    when(category){
+        "SHOES" ->return shoes
+        "TSHIRTS" ->return tshirt
+        else -> return digitalGood
+        //"HOODIES"-> return
+    }
+
+    }
 }
